@@ -23,6 +23,7 @@ import (
 
 	"github.com/submariner-io/admiral/pkg/reporter"
 	"github.com/submariner-io/subctl/internal/pods"
+	v1 "k8s.io/api/core/v1"
 	"k8s.io/client-go/kubernetes"
 )
 
@@ -43,6 +44,10 @@ func KubeProxyMode(client kubernetes.Interface, podNamespace string, status repo
 		Scheduling: scheduling,
 		Namespace:  podNamespace,
 		Command:    kubeProxyIPVSIfaceCommand,
+		SecurityContext: &v1.SecurityContext{
+			RunAsNonRoot:             pointer.Bool(true),
+			AllowPrivilegeEscalation: pointer.Bool(false),
+		},
 	})
 	if err != nil {
 		status.Failure("Error spawning the network pod: %v", err)
