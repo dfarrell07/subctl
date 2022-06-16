@@ -36,7 +36,7 @@ func Ensure(kubeClient kubernetes.Interface, namespace string, namespaceLabels m
 	// This works for greenfield but not upgradeS
 	//_, err := kubeClient.CoreV1().Namespaces().Create(context.TODO(), ns, v1meta.CreateOptions{})
 
-	_, err := controllerutil.CreateOrUpdate(context.TODO(), kubeClient, ns, func() {
+	_, err := controllerutil.CreateOrUpdate(context.TODO(), kubeClient.CoreV1().Namespaces(), ns, func() {
 		for k, v := range namespaceLabels {
 			ns.Labels[k] = v
 		}
