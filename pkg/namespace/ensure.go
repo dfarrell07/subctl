@@ -22,6 +22,7 @@ import (
 	"context"
 
 	"github.com/pkg/errors"
+	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 	v1 "k8s.io/api/core/v1"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	v1meta "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -29,10 +30,17 @@ import (
 )
 
 // Ensure functions updates or installs the operator CRDs in the cluster.
-func Ensure(kubeClient kubernetes.Interface, namespace string) (bool, error) {
-	ns := &v1.Namespace{ObjectMeta: v1meta.ObjectMeta{Name: namespace}}
+func Ensure(kubeClient kubernetes.Interface, namespace string, namespaceLabels map[string]string) (bool, error) {
+	ns := &v1.Namespace{ObjectMeta: v1meta.ObjectMeta{Name: namespace, Labels: namespaceLabels}}
 
-	_, err := kubeClient.CoreV1().Namespaces().Create(context.TODO(), ns, v1meta.CreateOptions{})
+	// This works for greenfield but not upgradeS
+	//_, err := kubeClient.CoreV1().Namespaces().Create(context.TODO(), ns, v1meta.CreateOptions{})
+
+	_, err := controllerutil.CreateOrUpdate(context.TODO(), kubeClient, ns, func() {
+		for k, v := range namespaceLabels {
+			ns.Labels[k] = v
+		}
+  })
 
 	if err == nil {
 		return true, nil
