@@ -116,10 +116,11 @@ jobs:
         with:
           debug: true
           languages: go
-      - name: Build code, creating CodeQL database
-        run: make build
       - name: Run CodeQL variant analysis
         uses: github/codeql-action/analyze@v2
+      - name: Show CodeQL scan SARIF report
+        if: always()
+        run: cat ../results/go.sarif
 
   vulnerability-scan:
     name: Vulnerability Scanning
