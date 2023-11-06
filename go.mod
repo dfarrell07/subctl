@@ -13,7 +13,7 @@ require (
 	github.com/onsi/gomega v1.27.10
 	github.com/openshift/api v0.0.0-20230714214528-de6ad7979b00
 	github.com/pkg/errors v0.9.1
-	github.com/spf13/cobra v1.7.0
+	github.com/spf13/cobra v1.8.0
 	github.com/spf13/pflag v1.0.5
 	github.com/submariner-io/admiral v0.16.0-m3.0.20230807132642-3d805dda2f2c
 	github.com/submariner-io/cloud-prepare v0.16.0-m3
@@ -56,7 +56,7 @@ require (
 	github.com/aws/aws-sdk-go-v2/service/ssooidc v1.15.0 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sts v1.21.0 // indirect
 	github.com/aws/smithy-go v1.14.0 // indirect
-	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
+	github.com/cpuguy83/go-md2man/v2 v2.0.3 // indirect
 	github.com/creack/pty v1.1.18 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/emicklei/go-restful/v3 v3.10.2 // indirect
