@@ -28,7 +28,7 @@ import (
 	"strings"
 
 	"github.com/coreos/go-semver/semver"
-	"github.com/google/go-github/v54/github"
+	"github.com/google/go-github/v70/github"
 	"github.com/spf13/cobra"
 	"github.com/submariner-io/admiral/pkg/names"
 	"github.com/submariner-io/admiral/pkg/reporter"
