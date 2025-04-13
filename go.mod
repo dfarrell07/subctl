@@ -10,8 +10,8 @@ require (
 	github.com/google/go-github/v54 v54.0.0
 	github.com/gophercloud/utils v0.0.0-20210909165623-d7085207ff6d
 	github.com/mattn/go-isatty v0.0.20
-	github.com/onsi/ginkgo/v2 v2.22.2
-	github.com/onsi/gomega v1.36.2
+	github.com/onsi/ginkgo/v2 v2.23.4
+	github.com/onsi/gomega v1.37.0
 	github.com/openshift/api v0.0.0-20230714214528-de6ad7979b00
 	github.com/pkg/errors v0.9.1
 	github.com/spf13/cobra v1.9.1
@@ -19,7 +19,7 @@ require (
 	github.com/submariner-io/admiral v0.21.0-m0
 	github.com/submariner-io/cloud-prepare v0.21.0-m0
 	github.com/submariner-io/lighthouse v0.21.0-m0
-	github.com/submariner-io/shipyard v0.21.0-m0
+	github.com/submariner-io/shipyard v0.21.0-m1
 	github.com/submariner-io/submariner v0.21.0-m0
 	github.com/submariner-io/submariner-operator v0.21.0-m0.0.20250310131525-36fe9e64306e
 	github.com/uw-labs/lichen v0.1.7
@@ -81,7 +81,7 @@ require (
 	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/google/gofuzz v1.2.0 // indirect
 	github.com/google/licenseclassifier v0.0.0-20201113175434-78a70215ca36 // indirect
-	github.com/google/pprof v0.0.0-20241210010833-40e02aabc2ad // indirect
+	github.com/google/pprof v0.0.0-20250403155104-27863c87afa6 // indirect
 	github.com/google/s2a-go v0.1.9 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/googleapis/enterprise-certificate-proxy v0.3.4 // indirect
@@ -119,12 +119,13 @@ require (
 	go.opentelemetry.io/otel v1.34.0 // indirect
 	go.opentelemetry.io/otel/metric v1.34.0 // indirect
 	go.opentelemetry.io/otel/trace v1.34.0 // indirect
+	go.uber.org/automaxprocs v1.6.0 // indirect
 	golang.org/x/crypto v0.36.0 // indirect
-	golang.org/x/sys v0.31.0 // indirect
+	golang.org/x/sys v0.32.0 // indirect
 	golang.org/x/term v0.30.0 // indirect
 	golang.org/x/text v0.23.0 // indirect
 	golang.org/x/time v0.10.0 // indirect
-	golang.org/x/tools v0.28.0 // indirect
+	golang.org/x/tools v0.31.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250219182151-9fdb1cabc7b2 // indirect
 	google.golang.org/grpc v1.70.0 // indirect
 	google.golang.org/protobuf v1.36.5 // indirect
