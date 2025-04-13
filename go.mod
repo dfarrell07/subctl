@@ -10,16 +10,16 @@ require (
 	github.com/google/go-github/v54 v54.0.0
 	github.com/gophercloud/utils v0.0.0-20210909165623-d7085207ff6d
 	github.com/mattn/go-isatty v0.0.20
-	github.com/onsi/ginkgo/v2 v2.22.2
-	github.com/onsi/gomega v1.36.2
+	github.com/onsi/ginkgo/v2 v2.23.4
+	github.com/onsi/gomega v1.37.0
 	github.com/openshift/api v0.0.0-20230714214528-de6ad7979b00
 	github.com/pkg/errors v0.9.1
 	github.com/spf13/cobra v1.9.1
 	github.com/spf13/pflag v1.0.6
-	github.com/submariner-io/admiral v0.21.0-m0
+	github.com/submariner-io/admiral v0.21.0-m1
 	github.com/submariner-io/cloud-prepare v0.21.0-m0
-	github.com/submariner-io/lighthouse v0.21.0-m0
-	github.com/submariner-io/shipyard v0.21.0-m0
+	github.com/submariner-io/lighthouse v0.21.0-m1
+	github.com/submariner-io/shipyard v0.21.0-m1
 	github.com/submariner-io/submariner v0.21.0-m0
 	github.com/submariner-io/submariner-operator v0.21.0-m0.0.20250310131525-36fe9e64306e
 	github.com/uw-labs/lichen v0.1.7
@@ -31,7 +31,7 @@ require (
 	k8s.io/apimachinery v0.32.2
 	k8s.io/client-go v0.32.2
 	k8s.io/utils v0.0.0-20241210054802-24370beab758
-	sigs.k8s.io/controller-runtime v0.20.2
+	sigs.k8s.io/controller-runtime v0.20.4
 	sigs.k8s.io/mcs-api v0.1.0
 	sigs.k8s.io/yaml v1.4.0
 )
@@ -81,7 +81,7 @@ require (
 	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/google/gofuzz v1.2.0 // indirect
 	github.com/google/licenseclassifier v0.0.0-20201113175434-78a70215ca36 // indirect
-	github.com/google/pprof v0.0.0-20241210010833-40e02aabc2ad // indirect
+	github.com/google/pprof v0.0.0-20250403155104-27863c87afa6 // indirect
 	github.com/google/s2a-go v0.1.9 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/googleapis/enterprise-certificate-proxy v0.3.4 // indirect
@@ -109,7 +109,7 @@ require (
 	github.com/mxk/go-flowrate v0.0.0-20140419014527-cca7078d478f // indirect
 	github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c // indirect
 	github.com/rivo/uniseg v0.4.3 // indirect
-	github.com/rs/zerolog v1.33.0 // indirect
+	github.com/rs/zerolog v1.34.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/sergi/go-diff v1.2.0 // indirect
 	github.com/urfave/cli/v2 v2.4.0 // indirect
@@ -119,12 +119,13 @@ require (
 	go.opentelemetry.io/otel v1.34.0 // indirect
 	go.opentelemetry.io/otel/metric v1.34.0 // indirect
 	go.opentelemetry.io/otel/trace v1.34.0 // indirect
+	go.uber.org/automaxprocs v1.6.0 // indirect
 	golang.org/x/crypto v0.36.0 // indirect
-	golang.org/x/sys v0.31.0 // indirect
+	golang.org/x/sys v0.32.0 // indirect
 	golang.org/x/term v0.30.0 // indirect
 	golang.org/x/text v0.23.0 // indirect
-	golang.org/x/time v0.10.0 // indirect
-	golang.org/x/tools v0.28.0 // indirect
+	golang.org/x/time v0.11.0 // indirect
+	golang.org/x/tools v0.31.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250219182151-9fdb1cabc7b2 // indirect
 	google.golang.org/grpc v1.70.0 // indirect
 	google.golang.org/protobuf v1.36.5 // indirect
