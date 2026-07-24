@@ -10,3 +10,8 @@ ignore:
   - vulnerability: CVE-2021-22570
     package:
       name: google.golang.org/protobuf
+  # Deprecated unmaintained openpgp subpackage. No fix available; advisory recommends
+  # migration to github.com/ProtonMail/go-crypto/openpgp which is a separate effort.
+  - vulnerability: GO-2026-5932
+    package:
+      name: golang.org/x/crypto
