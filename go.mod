@@ -15,20 +15,20 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/spf13/cobra v1.10.2
 	github.com/spf13/pflag v1.0.10
-	github.com/submariner-io/admiral v0.23.1
-	github.com/submariner-io/cloud-prepare v0.23.1
-	github.com/submariner-io/lighthouse v0.23.1
-	github.com/submariner-io/shipyard v0.23.1
-	github.com/submariner-io/submariner v0.23.1
-	github.com/submariner-io/submariner-operator v0.23.2-0.20260812142201-ba0cef1bc447
+	github.com/submariner-io/admiral v0.23.2
+	github.com/submariner-io/cloud-prepare v0.23.2
+	github.com/submariner-io/lighthouse v0.23.2
+	github.com/submariner-io/shipyard v0.23.2
+	github.com/submariner-io/submariner v0.23.2
+	github.com/submariner-io/submariner-operator v0.23.2
 	github.com/uw-labs/lichen v0.1.7
 	golang.org/x/net v0.58.0
 	golang.org/x/oauth2 v0.36.0
 	google.golang.org/api v0.264.0
-	k8s.io/api v0.35.7
-	k8s.io/apiextensions-apiserver v0.35.7
-	k8s.io/apimachinery v0.35.7
-	k8s.io/client-go v0.35.7
+	k8s.io/api v0.35.8
+	k8s.io/apiextensions-apiserver v0.35.8
+	k8s.io/apimachinery v0.35.8
+	k8s.io/client-go v0.35.8
 	k8s.io/utils v0.0.0-20251002143259-bc988d571ff4
 	sigs.k8s.io/controller-runtime v0.23.0
 	sigs.k8s.io/mcs-api v0.5.2
@@ -36,7 +36,7 @@ require (
 )
 
 require (
-	cloud.google.com/go/auth v0.18.1 // indirect
+	cloud.google.com/go/auth v0.18.2 // indirect
 	cloud.google.com/go/auth/oauth2adapt v0.2.8 // indirect
 	cloud.google.com/go/compute/metadata v0.9.0 // indirect
 	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.21.0 // indirect
@@ -94,7 +94,7 @@ require (
 	github.com/google/s2a-go v0.1.9 // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/googleapis/enterprise-certificate-proxy v0.3.11 // indirect
-	github.com/googleapis/gax-go/v2 v2.16.0 // indirect
+	github.com/googleapis/gax-go/v2 v2.17.0 // indirect
 	github.com/gophercloud/gophercloud/v2 v2.10.0 // indirect
 	github.com/gorilla/websocket v1.5.4-0.20250319132907-e064f32e3674 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
@@ -136,8 +136,8 @@ require (
 	golang.org/x/text v0.41.0 // indirect
 	golang.org/x/time v0.14.0 // indirect
 	golang.org/x/tools v0.49.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20260414002931-afd174a4e478 // indirect
-	google.golang.org/grpc v1.82.1 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20260526163538-3dc84a4a5aaa // indirect
+	google.golang.org/grpc v1.83.1 // indirect
 	google.golang.org/protobuf v1.36.12-0.20260120151049-f2248ac996af // indirect
 	gopkg.in/evanphx/json-patch.v4 v4.13.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
